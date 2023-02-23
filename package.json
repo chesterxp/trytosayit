@@ -1,0 +1,19 @@
+{
+  "name": "trytosayit",
+  "version": "1.0.0",
+  "description": "Audio services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chesterxp/trytosayit.git"
+  },
+  "author": "Luki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chesterxp/trytosayit/issues"
+  },
+  "homepage": "https://github.com/chesterxp/trytosayit#readme"
+}
