@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/chesterxp/trytosayit/issues"
   },
-  "homepage": "https://github.com/chesterxp/trytosayit#readme"
+  "homepage": "https://github.com/chesterxp/trytosayit#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssmin": "^0.2.0"
+  }
 }

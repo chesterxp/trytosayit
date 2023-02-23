@@ -50,7 +50,7 @@ body {
 }
 .heroTitle {
   margin-bottom: 20px;
-  font-size: 200px;
+  font-size: 100px;
   font-weight: 900;
   text-transform: uppercase;
   color: #062930;
@@ -61,7 +61,7 @@ body {
 }
 
 .subTitle {
-  font-size: 40px;
+  font-size: 20px;
   color: #062930;
   text-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
@@ -76,6 +76,35 @@ body {
   align-items: center;
   justify-content: center;
 }
+.footer__next {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__next-pl .footer__top {
+  background-color: #ffffff;
+}
+.footer__next-pl .footer__bottom {
+  background-color: #ff0000;
+}
+.footer__next-eng {
+  background-color: #5371ff;
+  font-size: 16px;
+  padding: 2px;
+}
+.footer__next-eng .footer__top {
+  background-color: #ddd;
+}
+.footer__next-eng .footer__bottom {
+  background-color: #ddd;
+}
+.footer__top, .footer__bottom {
+  width: 20px;
+  height: 10px;
+}
 
 @media all and (max-width: 600px) {
   .logo {
@@ -83,10 +112,11 @@ body {
     height: 150px;
   }
   .heroTitle {
-    font-size: 50px;
+    font-size: 36px;
+    margin-bottom: 10px;
   }
   .subTitle {
-    font-size: 20px;
+    font-size: 14px;
   }
   .footer {
     font-size: 18px;
