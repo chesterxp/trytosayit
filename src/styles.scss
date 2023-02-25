@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 $dark_blue: #062930;
 $light_blue: #5371ff;
 
@@ -18,6 +22,33 @@ body {
   height: 100vh;
   width: 100%;
   animation: fade-in 2s ease-in-out alternate;
+}
+
+.version{
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 5px 0;
+  margin: 20px 20px 20px auto;
+}
+
+.element{
+  width: 50px;
+  font-size: 16px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: rgba(6, 41, 48, 0.6);
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+  &:hover{
+    color: $dark_blue;
+    font-weight: bold;
+  }
+  &:first-child{
+    border-right: 1px solid rgba(6, 41, 48, 0.4);
+  }
 }
 
 .top {
@@ -81,43 +112,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &__next {
-    color: #fff;
-    margin-left: 20px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    &-pl {
-      #{$footer}__top {
-        background-color: #ffffff;
-      }
-      #{$footer}__bottom {
-        background-color: #ff0000;
-      }
-    }
-    &-eng {
-      background-color: $light_blue;
-      font-size: 16px;
-      padding: 2px;
-      #{$footer}__top {
-        background-color: #ddd;
-      }
-      #{$footer}__bottom {
-        background-color: #ddd;
-      }
-    }
-  }
-
-  &__top,
-  &__bottom {
-    width: 20px;
-    height: 10px;
-  }
 }
 
 @media all and (max-width: 600px) {
+  .version{
+  margin: 15px 0px 15px auto;
+}
   .logo {
     width: 180px;
     height: 150px;
@@ -133,6 +133,6 @@ body {
 
   .footer {
     font-size: 18px;
-    height: 40px;
+    height: 50px;
   }
 }

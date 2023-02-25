@@ -5,7 +5,8 @@ const autoprefixer = require('gulp-autoprefixer');
 
  
 gulp.task('min', async function () {
-    gulp.src('src/**/*.css')
+    // gulp.src('src/**/*.css')
+    gulp.src('src/styles.css')
         .pipe(autoprefixer({
 			cascade: false
 		}))

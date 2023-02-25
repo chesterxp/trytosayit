@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   background-color: #e6e6e6;
@@ -16,6 +20,33 @@ body {
   height: 100vh;
   width: 100%;
   animation: fade-in 2s ease-in-out alternate;
+}
+
+.version {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 5px 0;
+  margin: 20px 20px 20px auto;
+}
+
+.element {
+  width: 50px;
+  font-size: 16px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: rgba(6, 41, 48, 0.6);
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+.element:hover {
+  color: #062930;
+  font-weight: bold;
+}
+.element:first-child {
+  border-right: 1px solid rgba(6, 41, 48, 0.4);
 }
 
 .top {
@@ -76,37 +107,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.footer__next {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.footer__next-pl .footer__top {
-  background-color: #ffffff;
-}
-.footer__next-pl .footer__bottom {
-  background-color: #ff0000;
-}
-.footer__next-eng {
-  background-color: #5371ff;
-  font-size: 16px;
-  padding: 2px;
-}
-.footer__next-eng .footer__top {
-  background-color: #ddd;
-}
-.footer__next-eng .footer__bottom {
-  background-color: #ddd;
-}
-.footer__top, .footer__bottom {
-  width: 20px;
-  height: 10px;
-}
 
 @media all and (max-width: 600px) {
+  .version {
+    margin: 15px 0px 15px auto;
+  }
   .logo {
     width: 180px;
     height: 150px;
@@ -120,6 +125,6 @@ body {
   }
   .footer {
     font-size: 18px;
-    height: 40px;
+    height: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
