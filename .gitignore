@@ -1,5 +1,6 @@
 .vscode
 /robocze
+/src/version
 # Logs
 logs
 *.log
