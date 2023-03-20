@@ -111,6 +111,9 @@ body {
 }
 
 @media all and (max-width: 600px) {
+  .box {
+    height: calc(100vh - 50px);
+  }
   .version {
     margin: 15px 0px 15px auto;
   }
